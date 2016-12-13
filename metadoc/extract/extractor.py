@@ -69,6 +69,9 @@ class Extractor(object):
   def get_contenthash(self):
     """Generate md5 hash over title and body copy in order to keep track
     of changes made to a text, do diffs if necessary
+    
+    Possible alternative: Hash over Canonical URL, if present.
+    see: https://support.google.com/webmasters/answer/139066?hl=en
     """
     contentstring = (self.title + self.fulltext).encode("utf-8")
     self.contenthash = hashlib.md5(contentstring).hexdigest()
