@@ -3,7 +3,7 @@
 
 import nltk
 import time
-from metadoc.extract.pos import do_train
+from extract.pos import do_train
 
 def install():
   REQUIRED_CORPORA = [
