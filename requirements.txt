@@ -1,5 +1,5 @@
 aiohttp==1.1.5
-bottle==0.12.10
+bottle==0.12.19
 python-dateutil==2.6.1
 jmespath==0.9.0
 langdetect==1.0.7
